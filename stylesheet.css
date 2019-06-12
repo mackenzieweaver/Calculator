@@ -6,7 +6,8 @@
 body {
   width: 100vw;
   text-align: center;
-  display: flex;
+  display: grid;
+  grid-gap: 1rem;
   justify-content: center;
   background-color: #c2c2d6;
 }
@@ -24,13 +25,13 @@ body {
   height: minmax(300px, 100vh);
   width: 300px;
   border: 3px solid #222;
-  padding: 5px;
+  padding: 10px;
   margin-top: 3rem;
   background-color: #333;
 }
 
 .dblw {
-  grid-column: 1/3
+  grid-column: 1/3;
 }
 
 .dblh {
@@ -39,9 +40,9 @@ body {
 }
 
 #buttons {
-  display: grid; 
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1px;
+  grid-gap: 2px;
   margin: 1px;
 }
 
@@ -64,4 +65,13 @@ body {
 #buttons #equals {
   color: white;
   background-color: #0000be;
+}
+
+#contact a {
+  color: black;
+  margin: 1rem;
+}
+
+#contact a:hover {
+  color: purple;
 }

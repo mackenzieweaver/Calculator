@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>title</title>
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Vanilla JS Calculator</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
   </head>
+
   <body>
-    
     <div id="calculator">
       <div id="input">
         <div id="output"></div>
         <div id="display">0</div>
       </div>
       <div id="buttons">
-        <button type="button" id="clear" class="dblw" onclick="clearit()">AC</button>
+        <button type="button" id="clear" onclick="clearit()" class="dblw">
+          AC
+        </button>
         <button type="button" id="divide" onclick="operate('/')">/</button>
         <button type="button" id="multiply" onclick="operate('*')">x</button>
         <button type="button" id="seven" onclick="num('7')">7</button>
@@ -28,12 +30,34 @@
         <button type="button" id="one" onclick="num('1')">1</button>
         <button type="button" id="two" onclick="num('2')">2</button>
         <button type="button" id="three" onclick="num('3')">3</button>
-        <button type="button" id="equals" onclick="calculate()" class="dblh">=</button>
-        <button type="button" id="zero" onclick="num('0')" class="dblw">0</button>
+        <button type="button" id="equals" onclick="calculate()" class="dblh">
+          =
+        </button>
+        <button type="button" id="zero" onclick="num('0')" class="dblw">
+          0
+        </button>
         <button type="button" id="decimal" onclick="num('.')">.</button>
       </div>
     </div>
-  
-    <script src="app.js"></script>
+    <div id="contact">
+      <script src="https://kit.fontawesome.com/8b5ae67e5c.js"></script>
+      <a href="https://github.com/mackenzieweaver" target="_blank">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/mackenzie-weaver/" target="_blank">
+        <i class="fab fa-linkedin-in fa-2x"></i>
+      </a>
+      <a href="https://www.freecodecamp.org/mackenzieweaver" target="_blank">
+        <i class="fab fa-free-code-camp fa-2x"></i>
+      </a>
+      <a href="https://codepen.io/mackenzieweaver/" target="_blank">
+        <i class="fab fa-codepen fa-2x"></i>
+      </a>
+      <a href="mailto:macknz7@gmail.com?Subject=I saw your website">
+        <i class="fas fa-envelope fa-2x"></i>
+      </a>
+      <p style="padding: 10px;">Mackenzie Weaver</p>
+    </div>
+    <script src="./app.js"></script>
   </body>
 </html>
